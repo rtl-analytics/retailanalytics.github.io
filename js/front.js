@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* =====================================
-		VIDEO MODAL
-	======================================== */
-    new ModalVideo(".js-modal-btn");
-
-    /* =====================================
 		NAVBAR BEHAVIOR
 	======================================== */
     window.addEventListener("scroll", navBehavior);
@@ -32,22 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".navbar").classList.remove("active");
         }
 
-        if (window.pageYOffset > 1000) {
-            document.querySelector("#scrollTop").classList.add("active");
-        } else {
-            document.querySelector("#scrollTop").classList.remove("active");
-        }
+        // if (window.pageYOffset > 1000) {
+        //     document.querySelector("#scrollTop").classList.add("active");
+        // } else {
+        //     document.querySelector("#scrollTop").classList.remove("active");
+        // }
     }
 
     /* =====================================
 		MOVE TO TOP OF THE PAGE
 	======================================== */
-    document
-        .getElementById("scrollTop")
-        .addEventListener("click", function (e) {
-            e.preventDefault();
-            window.scrollTo(0, 0);
-        });
+    // document
+    //     .getElementById("scrollTop")
+    //     .addEventListener("click", function (e) {
+    //         e.preventDefault();
+    //         window.scrollTo(0, 0);
+    //     });
 
     /* =====================================================
 		BOOTSTRAP SCROLLSPY
